@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+  
+    // meta data
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no")
+    meta(name="description" content="")
+
+    // title
+    if enviroment=="development"   
+      title #{title} (#{enviroment})
+    if enviroment!="development"   
+      title #{title}
+    
+    // css
+    link(rel='stylesheet' href='/assets/css/custom/misc/baseline.css')
+    link(rel='stylesheet' href='/assets/css/custom/misc/grid.css')
+    link(rel='stylesheet' href='/assets/css/custom/misc/utility.css')
+    link(rel='stylesheet' href='/assets/css/custom/misc/visiblity.css')
+    link(rel='stylesheet' href='/assets/css/custom/semantic/semantic.min.css')
+    
+    // semantic-ui
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src='/assets/js/custom/semantic/semantic.min.js')   
+    
+    // react 
+    script(src='/assets/js/custom/react/react.min.js')
+    script(src='/assets/js/custom/react/react.dom.min.js')    
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js')
+    
+    // insert react components
+    script(src='/components/main_component.js' type="text/babel")
+
+    script(type='text/javascript').
+      _root = {
+        globals: {
+          enviroment: "#{enviroment}",
+          isMobile: "#{isMobile}",
+          isIphone: "#{isIphone}",
+          isIpad: "#{isIpad}",
+          isAndroid: "#{isAndroid}",
+          userAgent: "#{userAgent}"
+        }
+      }    
+    
+    // production 
+    if enviroment=="production" 
+    
+    // development
+    if enviroment=="development"   
+
+  body    
+    #app
+
+
+    
