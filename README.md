@@ -8,7 +8,7 @@
 Install instructions:
   - Clone this repo, install dependencies, then start
 ```sh
-git clone https://github.com/allenRoyston/react-weatherapp.git
+$ git clone https://github.com/allenRoyston/react-weatherapp.git
 $ cd react-weatherapp
 $ npm install
 $ npm start
