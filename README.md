@@ -8,7 +8,7 @@
 Install instructions:
   - Clone this repo
 ```sh
-git clone https://github.com/allenRoyston/Express-Angular2-Seed.git
+git clone https://github.com/allenRoyston/react-weatherapp.git
 ```
   - change to repo directory
 ```sh
